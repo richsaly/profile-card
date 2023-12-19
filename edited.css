@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body{
+      background-color: rgb(5, 2, 24);
+  }
+  
+  .head, .logo{
+      text-decoration: none;
+      color: blueviolet;
+      font-weight: 700; font-size: 20px;
+      margin-top: 20px; margin-left: 50px;
+      transition: 0s;
+      opacity: 0;
+      transform: translatex(30px);
+      animation: moveup 5s linear forwards;
+  }
+  
+  @keyframes moveup{
+      100%{
+        opacity: 1;
+        transform: translatey(0px);
+      }
+     }
+  
+  span{
+      color: red;
+  }
+  
+  .hero1{
+      margin-top: 30px;
+      display: flex;
+     justify-content: space-between;
+  }
+  
+
+  .pcard{
+    flex: 1;
+  }
+  .pcard__overlay {
+      background-color: blue;
+      width: 100%;
+    height: 200px;
+  }
+  
+  .pcard img{
+      margin-top: -210px;
+      width: 100%;
+      transition: 0s;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: moveup 5s linear forwards;
+  }
+  
+  .pcard hr{
+      margin-top: 5px; 
+      height: 5px;
+      background-color: red;
+      
+  }
+
+  .ncard {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .ncard h1[draggable]{
+      color: whitesmoke;
+      font-size: 40px;
+      font-weight: 700;
+      text-align: center;
+  }
+  
+  .ncard p{
+      color: bisque;
+      font-size: 20px;
+      padding-top: 20px;
+  }
+
+  .scard{
+    margin-top: 20px;
+  }
+
+  .scard p{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: Arial;
+    font-style: oblique;
+    text-align: center;
+  }
+
+
+  .social {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+  }
+  
+  .social a{
+      font-size: 50px;
+      margin-top: 50px;
+      color: blueviolet;
+
+  }
+
+.scard h4,
+  .last__container {
+width: 80%;
+margin: 0 auto;
+  }
+
+  .last a{
+       text-decoration: none;
+       color: whitesmoke;
+       transition: 0s;
+       opacity: 0;
+       transform: translateY(30px);
+       animation: moveup 5s linear infinite;
+  }
+  
+  .last a, h4{
+      font-size: 30px;
+      background-color: blue;
+      text-align: center;
+      padding: 20px, 30px;
+      border-radius: 30px;
+  }
+  
+  .slide-p h3{
+      color: blueviolet;
+      font-size: 30px;
+      text-align: center;
+      margin-top: 30px;
+    }
+  
+   @media (min-width: 100px) and (max-width: 500px){
+    .head, .logo{
+      text-decoration: none;
+      color: blueviolet;
+      font-weight: 700; font-size: 10px;
+  }
+  
+  .hero1{
+    margin-top: 30px;
+    flex-direction: column;
+  }
+
+  .pcard{
+    background-color: yellow;
+     }
+
+  .ncard h1[draggable]{
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 50px; margin-left: 0px;
+    text-decoration: underline;
+  }
+  
+  .ncard p{
+    color: bisque;
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .scard h4 {
+    font-size: 16px;
+   
+  }
+  .scard p {
+    font-size: 12px;
+   text-align: center;
+  }
+
+.last__container a h4 {
+  font-size: 12px;
+  padding: 8px;
+}
+  
+  .slide-p h3{
+   color: blueviolet;
+   font-size: 15px;
+   text-align: center;
+  }
+  
+  .social a{
+    font-size: 20px;
+  }
+  
+   }
