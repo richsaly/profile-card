@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body{
+      background-color: rgb(5, 2, 24);
+  }
+  
+  .head, .logo{
+      text-decoration: none;
+      color: blueviolet;
+      font-weight: 700; font-size: 20px;
+      margin-top: 20px; margin-left: 50px;
+      transition: 0s;
+      opacity: 0;
+      transform: translatex(30px);
+      animation: moveup 5s linear forwards;
+  }
+  
+  @keyframes moveup{
+      100%{
+        opacity: 1;
+        transform: translatey(0px);
+      }
+     }
+  
+  span{
+      color: red;
+  }
+  
+  .hero1{
+      margin-top: 30px;
+  }
+  
+  .row{
+     display: flex;
+     justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+     /* margin-left: 150px; margin-right: 150px; */
+  }
+
+  .row a i{
+    font-size: 50px;
+  }
+
+  .pcard{
+    position: relative;
+    background-color: blue;
+    height: 200px;
+    margin-right: 20px;
+    
+   
+  }
+  
+  .pcard img{
+      height: 400px; width: 600px;
+      margin-bottom: 0;
+      transition: 0s;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: moveup 5s linear forwards;
+  }
+  
+  .pcard hr{
+      margin-top: 5px; margin-left: 150px; height: 5px;
+      width: 300px;
+      background-color: red;
+      
+  }
+  
+  .ncard h1[draggable]{
+      color: whitesmoke;
+      font-size: 40px;
+      font-weight: 700;
+      margin-top: 0px;
+      margin-left: 100px;
+  }
+  
+  .ncard p{
+      margin-left: 40px;
+      color: bisque;
+      font-size: 20px;
+      padding-top: 20px;
+  }
+
+  .scard{
+    margin-top: 20px;
+  }
+
+  .scard p{
+    margin-left: 80px;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: Arial;
+    font-style: oblique;
+  }
+
+  
+  /* .social a{
+      font-size: 50px;
+      margin-top: 50px;
+      color: blueviolet;
+      margin-top: 50px; margin-bottom: 20px;
+
+  } */
+  
+  .last a{
+       text-decoration: none;
+       color: whitesmoke;
+       transition: 0s;
+       opacity: 0;
+       transform: translateY(30px);
+       animation: moveup 5s linear infinite;
+  }
+  
+  .last a, h4{
+      font-size: 30px;
+      background-color: blue;
+      text-align: center;
+      padding: 20px, 30px;
+      margin-left: 200px; margin-right: 200px;
+      border-radius: 30px;
+  }
+  
+  .last h4{
+      color: red;
+  }
+  
+  .slide-p h3{
+      color: blueviolet;
+      font-size: 30px;
+      text-align: center;
+      margin-top: 30px;
+    }
+  
+   @media (min-width: 100px) and (max-width: 500px){
+    .head, .logo{
+      text-decoration: none;
+      color: blueviolet;
+      font-weight: 700; font-size: 10px;
+      margin-top: 20px; margin-left: 10px;
+  }
+  
+  .hero1{
+    margin-top: 30px;
+  }
+  
+  .row{
+   display: grid;
+   justify-content: space-between;
+   margin-left: 20px; margin-right: 100px;
+  }
+
+  .pcard{
+    background-color: yellow;
+     }
+  
+  .pcard img{
+    height: 200px; width: 300px;
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+  
+  .pcard hr{
+    margin-top: 2px; height: 5px;
+    margin-left: 10px;
+    background-color: red;
+    padding-right: 10px;
+    
+  }
+  
+  .ncard h1[draggable]{
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 50px; margin-left: 0px;
+    text-decoration: underline;
+  }
+  
+  .ncard p{
+    margin-left: 5px;
+    color: bisque;
+    font-size: 15px;
+    padding-top: 10px; 
+    padding-right: 20px;
+    text-align: justify;
+  }
+
+  .row a i{
+    font-size: 30px;
+  }
+
+
+  
+  .last a{
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 0s;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 5s linear infinite;
+  }
+  
+  .last a, h4{
+   font-size: 15px;
+   background-color: blue;
+   text-align: center;
+   padding: 20px, 20px;
+   margin-left: 30px; margin-right: 30px;
+   border-radius: 30px;
+  }
+  
+  .last h4{
+   color: red;
+  }
+  
+  .slide-p h3{
+   color: blueviolet;
+   font-size: 20px;
+   text-align: center;
+   margin-top: 30px; margin-bottom: 20px;
+   
+  }
+  
+  /* .social a{
+    font-size: 20px;
+    margin-top: 40px;
+    display: flex; 
+    justify-content: space-between;
+  }
+   */
+   }
